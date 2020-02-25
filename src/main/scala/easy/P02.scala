@@ -20,7 +20,7 @@ object P02 extends App {
     list match {
       case secondLast :: _ :: Nil => Some(secondLast)
       case _ :: tail => getSecondLast(tail, secondLast)
-      case _ => throw new Exception("list doesn't have enough elements")
+      case _ => None
     }
   }
 
